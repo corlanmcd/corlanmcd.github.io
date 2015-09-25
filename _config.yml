@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Journeyman.Programmer
 locale:           en_US
 url:
 
@@ -26,7 +26,7 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Corlan McDonald
   avatar: bio-photo.jpg
   bio: "Describe your self."
   email:
@@ -42,7 +42,7 @@ owner:
   bing-verify:
   github: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  linkedin: corlanmcdonald
   xing: #username
   instagram: #username
   lastfm: #username
