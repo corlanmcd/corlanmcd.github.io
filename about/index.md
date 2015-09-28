@@ -1,25 +1,27 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, responsive]
-modified: 2014-08-08T20:53:07.573882-04:00
+title: Welcome
+excerpt: Join me on the journey.
+tags: [welcome, becoming better, software engineer, software, software development]
 comments: true
 image:
-  feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+    feature: welcome_page.png
+    credit: Unknown
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+#### Hey there, welcome to Journeyman Programmer.
 
-## Minimal Mistakes is all about:
+You might be wondering what this site is all about. I’m glad you asked: it’s about the journey from being a “decent” to a “great” software developer. For far too long, I always told myself, 
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
+> “Corlan, ol’ pal, it’s time to learn _____.” 
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+You could fill in the blank with topics such as “data structures & algorithms,” “C++11,” “Swift.” Soon enough, I had a lengthy list of topics to fill in that exact blank. I don’t know about you, dear visitor, but my list of things I wanted to learn far, far outweighed the list of things I learned because I was always putting things off, always holding back. 
+
+#### So what changed? What spurred me to begin this blog?
+
+Lately, I’ve been reading self-improvement books such as *Becoming a Better Programmer* by Pete Goodcliff, *Soft Skills: The Software Developer's Life Manual* by John Sonmez, and *The Passionate Programmer: Creating a Remarkable Career in Software Development* by Chad Howler, all of which I highly recommend budding software developers read. Both books preach, among other themes, the concept of lifelong self-teaching. Quite frankly, this is common knowledge (especially for software developers), but the problem is that as common as it may be, we sometimes may be more reactive than proactive in our learning. Sometimes we learn something when we absolutely must, not out of curiosity (“Hmm, I wonder how Go's syntax differs from C++'s.”). In my first year as a professional software developer, there were many technologies/methodologies that I wanted to learn, but never did. I wanted to change that.
+
+Journeyman Programmer was my call-to-action to become a great software developer, which I hope will be yours as well. I’ll be using Journeyman Programmer as a venue for teaching topics that I’m currently learning, which provides two benefits: it helps me solidify what I’m learning by teaching, but most importantly, providing you guys a one-step-ahead source of learning material because who best to learn from than someone who just learned what we want to learn? Sometimes, we learn best from such people.
+
+
+#### Join me on the journey, we’ve got a ways to go.
