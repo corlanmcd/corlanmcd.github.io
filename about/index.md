@@ -9,7 +9,7 @@ image:
     credit: Unknown
 ---
 
-#### Hey there, welcome to Journeyman Programmer.
+#### Hey there, welcome to the Journeyman Programmer.
 
 You might be wondering what this site is all about. I’m glad you asked: it’s about the journey from being a “decent” to a “great” software developer. For far too long, I always told myself, 
 
