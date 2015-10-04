@@ -29,16 +29,17 @@ So why would we want a variable that only stores addresses? Memory. We would lik
 {% highlight cpp %}
 void add_one(int num)
 {
-num = num +1;
+    num = num + 1;
 }
 
 void main()
 {
-    int value = 1;
+    int val = 1;
     add_one(value);
-    std::cout << "Value: " << value;
+    std::cout << "Val: " << value;
 }
 {% endhighlight %}
 
+After the function call to 'add_one' what is the value of 'val'? If said "2," you would be incorrect. The value stored by 'val' is still one, because 'add_one' never modified 'val'. "But we passed in val as a parameter to add_one!" You're absolutely correct, but 'add_one' recieved a **copy** of 'val', not 'val' itself.'
 
 
