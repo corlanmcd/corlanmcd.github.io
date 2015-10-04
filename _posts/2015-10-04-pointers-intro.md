@@ -29,7 +29,7 @@ So why would we want a variable that only stores addresses? Memory. We would lik
 {% highlight cpp %}
 void add_one(int num)
 {
-    // Do something with value.
+num = num +1;
 }
 
 void main()
