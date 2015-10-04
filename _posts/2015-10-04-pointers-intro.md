@@ -22,16 +22,21 @@ For some people, the concept of pointers is difficult to grasp, herculean almost
 If you're afraid of pointers, don't be. Let's clear the air with my friends * and &, they're good people.
 
 #### What are Pointers?
->Pointers are variable types in C/C++ that stores the address of non-pointer variables of the same type. 
+>In C/C++, pointers are variable types that stores the address of non-pointer variables of the same type. 
 
 So why would we want a variable that only stores addresses? Memory. We would like our programs to use the least amount of memory where it is not feasible to make copies of everything. Take the following piece of code:
 
 {% highlight cpp %}
-int value = 4;
-
-void foo(value)
+void add_one(int num)
 {
     // Do something with value.
+}
+
+void main()
+{
+    int value = 1;
+    add_one(value);
+    std::cout << "Value: " << value;
 }
 {% endhighlight %}
 
