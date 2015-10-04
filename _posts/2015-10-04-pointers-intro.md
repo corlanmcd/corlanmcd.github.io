@@ -40,6 +40,6 @@ void main()
 }
 {% endhighlight %}
 
-After the function call to 'add_one' what is the value of 'val'? If said "2," you would be incorrect. The value stored by 'val' is still one, because 'add_one' never modified 'val'. "But we passed in val as a parameter to add_one!" You're absolutely correct, but 'add_one' recieved a **copy** of 'val', not 'val' itself.'
+After the function call to 'add_one' what is the value of `val`? If you said "2," you would be incorrect. The value stored by `val` is still `1`, because `add_one` never modified `val`. "But we passed in val as a parameter to add_one!" You're absolutely correct, but `add_one` recieved a **copy** of `val`, not `val` itself.
 
 
