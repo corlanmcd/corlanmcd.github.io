@@ -12,7 +12,8 @@ image:
 ---
 
 {% include _toc.html %}
-#### Don't Be Afraid.
+
+#### Don't Be Afraid
 [The stuff of nightmares.](https://alice961994.files.wordpress.com/2014/11/futurama-fry-stress.png) 
 
 That was the expression of the majority of my classmates when our professor finished his lecture on pointers in my *Intro to C class* during my freshman year of college. I can tell you I've seen it on the faces of many entry-level software engineers as well.
