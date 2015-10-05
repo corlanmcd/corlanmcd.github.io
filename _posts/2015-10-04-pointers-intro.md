@@ -12,12 +12,12 @@ image:
 ---
 
 {% include _toc.html %}
-
+#### Don't Be Afraid.
 [The stuff of nightmares.](https://alice961994.files.wordpress.com/2014/11/futurama-fry-stress.png) 
 
 That was the expression of the majority of my classmates when our professor finished his lecture on pointers in my *Intro to C class* during my freshman year of college. I can tell you I've seen it on the faces of many entry-level software engineers as well.
 
-For some people, the concept of pointers is difficult to grasp, herculean almost, and is a common reason why many students loath C/C++ and jump on the Java or C# bandwagon ("Hurrah! No pointers!") because they'll never have to deal with a pointer or memory management again (Java and C# use references in leu of pointers). 
+For some people, the concept of pointers is difficult to grasp, herculean almost, and is a common reason why many students loathe C/C++ and jump on the Java or C# bandwagon ("Hurrah! No pointers!") because they'll never have to deal with a pointer or memory management again (Java and C# use references in leu of pointers). 
 
 If you're afraid of pointers, don't be. Let's clear the air with my friends * and &, they're good people.
 
@@ -35,13 +35,11 @@ void add_one(int num)
 void main()
 {
     int val = 1;
-    add_one(value);
-    std::cout << "Val: " << value;
+    add_one(val);
+    std::cout << "Val: " << val;
 }
 {% endhighlight %}
 
-After the function call to `add_one` what is the value of `val`? If you said "2," you would be incorrect. The value stored by `val` is still `1`, because `add_one` never modified `val`. "But we passed in val as a parameter to add_one!" You're absolutely correct, but `add_one` recieved a **copy** of `val`, not `val` itself. 
+What do you think is the output of our small program above? If you said "2," you would be incorrect - it's still 1. "But we passed in val as a parameter to add_one!," you may say, and you're absolutely correct. The problem is, is that `add_one` recieved a **copy** of `val` - `val` was *passed-by-value*.
 
-The value of `val` is copied to a temporary location, and this location is passed to `add_one`. Thus, `add_one` does not have access to the real `val` - this is called *pass-by-value*.
-
-
+When a variable is *passed-by-value* to a function, this what happens: the value of `val` is copied to a temporary location, and this location is passed to `add_one` in the form of `num`. Since `add_one` recieved a copy of `val`, it cannot change `val` in any way.
