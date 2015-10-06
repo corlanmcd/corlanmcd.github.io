@@ -50,7 +50,7 @@ When a variable is *passed-by-value* to a function, this what happens: the value
 
 Instead, without pointers and references, you’d have to write the following:
 
-Without pointers and references, you’d have to write something like this:
+Without pointers and references, you’d have to write:
 
 {% highlight cpp %}
 int add_one(int num)
@@ -131,10 +131,11 @@ void main()
 
 I bet you’re wondering, “Are we still passing-by-value?” Nope! We are **passing-by-reference**! which means we are passing the address of the object, no copying necessary (not even a pointer).
 
-#### Who wins?
+#### Who Wins?
 So when do you use a pointer, or reference? I like how [Klaim](http://stackoverflow.com/a/7058373) from StackOverflow (great site) puts it:
 
 > Use reference wherever you can, pointers wherever you must.
-Avoid pointers until you can't.
+
+>Avoid pointers until you can't.
 The reason is that pointers make things harder to follow/read, less safe and far more dangerous manipulations than any other constructs.
 So the rule of thumb is to use pointers only if there is no other choice.
