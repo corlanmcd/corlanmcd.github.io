@@ -2,7 +2,7 @@
 layout: post
 title: Pointers & References
 modified:
-excerpt: “A super brief introduction.“
+excerpt: A super brief introduction.
 tags: [pointers, what is a pointer, what is a reference, pointers and references in c, pointers and references in c++, pointers as function parameters, pointers and arrays, tutorial on pointers, pointers in c, pointers in c++, c, c++, programming, programming languages]
 comments: true
 image:
