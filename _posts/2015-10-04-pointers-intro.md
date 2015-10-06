@@ -131,10 +131,15 @@ void main()
 
 I bet you’re wondering, “Are we still passing-by-value?” Nope! We are **passing-by-reference**! which means we are passing the address of the object, no copying necessary (not even a pointer).
 
+On a side note, it’s valuable to mention that the address-of (&) and dereference (*) operators cancel each other out. 
+Using `int val = 1` and `int *ptr1 = val`, `int *ptr2 = &(*ptr)` also equals 1. `int *ptr2 = &(*ptr)` is C++ for “`ptr2` is an integer pointer that (equals) points to the address in memory where the the pointer `ptr1` points to.”
+{: .notice} 
+
+
 #### Who Wins?
 So when do you use a pointer, or reference? I like how [Klaim](http://stackoverflow.com/a/7058373) from StackOverflow (great site) puts it:
 
-Use reference wherever you can, pointers wherever you must.
+>Use reference wherever you can, pointers wherever you must.
 Avoid pointers until you can't.
 The reason is that pointers make things harder to follow/read, less safe and far more dangerous manipulations than any other constructs.
 So the rule of thumb is to use pointers only if there is no other choice.
