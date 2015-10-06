@@ -131,8 +131,10 @@ void main()
 
 I bet you’re wondering, “Are we still passing-by-value?” Nope! We are **passing-by-reference**! which means we are passing the address of the object, no copying necessary (not even a pointer).
 
-On a side note, it’s valuable to mention that the address-of (&) and dereference (*) operators cancel each other out. Using `int val = 1` and `int *ptr1 = val`, `int *ptr2 = &(*ptr)` also equals 1. `int *ptr2 = &(*ptr)` is C++ for “`ptr2` is an integer pointer that (equals) points to the address in memory where the the pointer `ptr1` points to.”
+On a side note, it’s valuable to mention that the address-of (&) and dereference (*) operators cancel each other out. 
 {: .notice} 
+Using `int val = 1` and `int *ptr1 = val`, `int *ptr2 = &(*ptr)` also equals 1. `int *ptr2 = &(*ptr)` is C++ for “`ptr2` is an integer pointer that (equals) points to the address in memory where the the pointer `ptr1` points to.”
+
 
 #### Who wins?
 So when do you use a pointer, or reference? I like how [Klaim](http://stackoverflow.com/a/7058373) from StackOverflow (great site) puts it:
