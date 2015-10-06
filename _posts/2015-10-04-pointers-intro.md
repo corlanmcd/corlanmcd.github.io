@@ -71,6 +71,13 @@ int main()
 #### What are Pointers?
 >In C/C++, pointers (e.g. int *x) are variable types that stores the address of non-pointer variables of the same type - they point to the location in memory of that non-pointer variable.
 
+
+
+<figure>
+	<a href="http://imgs.xkcd.com/comics/pointers.png"><img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg"></a>
+	<figcaption><a href=“xkcd.com” title=“An XKCD comic on pointers.“>An XKCD comic on pointers.</a>.</figcaption>
+</figure>
+
 So why would we want a variable that only stores memory addresses? Performance. Pointers allow you to refer to the same space in memory from multiple locations.This means you can modify the value stored in that memory space (where the non-pointer variable existed) and have that change visible in other parts of your program. This is helpful when playing with large objects. In our previous code example, we copied *by value* an integer - 4 bytes of data. What if we wanted to pass a `struct` that contained 500 integers? That’s *4 x 5 = 2000* bytes of data that’s copied! Instead of copying the 2000 bytes, we can pass a pointer, typically 4 bytes with most compilers. To show you how you’d go about using a pointer, let’s modify the original code example.
 
 {% highlight cpp %}
@@ -121,7 +128,7 @@ void main()
 }
 {% endhighlight %}
 
-[Feel like this?](http://bit.ly/1Q2UzZr) I know. For the most part, pointers and references are very similar in C++ (most C++ compilers implement references as pointers[^1]), but have the following differences:
+[Feel like this?](http://i.kinja-img.com/gawker-media/image/upload/s--rpTuqXKR--/1460683416091749291.jpg) I know. For the most part, pointers and references are very similar in C++ (most C++ compilers implement references as pointers[^1]), but have the following differences:
 * References can’t be reassigned, pointers can (infinitely).
 * References are not allowed to be set to NULL, pointers can.
 * You can’t take the address of a reference, with pointers you can.
