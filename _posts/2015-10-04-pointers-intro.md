@@ -132,7 +132,7 @@ void main()
 I bet you’re wondering, “Are we still passing-by-value?” Nope! We are **passing-by-reference**! which means we are passing the address of the object, no copying necessary (not even a pointer).
 
 On a side note, it’s valuable to mention that the address-of (&) and dereference (*) operators cancel each other out. 
-Using `int val = 1`, `int *ptr1 = val`, and `int *ptr2 = &(*ptr)`, `*ptr` also equals 1. `int *ptr2 = &(*ptr)` is C++ for “`ptr2` is an integer pointer that (equals) points to the address in memory where the the pointer `ptr1` points to.”
+Using `int val = 1`, `int *ptr1 = val`, and `int *ptr2 = &(*ptr)`, `*ptr2` also equals 1. `int *ptr2 = &(*ptr)` is C++ for “`ptr2` is an integer pointer that (equals) points to the address in memory where the the pointer `ptr1` points to.”
 {: .notice} 
 
 
