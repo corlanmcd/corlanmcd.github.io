@@ -122,7 +122,6 @@ void main()
 {% endhighlight %}
 
 [Feel like this?](http://bit.ly/1Q2UzZr) I know. For the most part, pointers and references are very similar in C++ (most C++ compilers implement references as pointers[^1]), but have the following differences:
-
 * References can’t be reassigned, pointers can (infinitely).
 * References are not allowed to be set to NULL, pointers can.
 * You can’t take the address of a reference, with pointers you can.
@@ -132,9 +131,10 @@ void main()
 
 I bet you’re wondering, “Are we still passing-by-value?” Nope! We are **passing-by-reference**! which means we are passing the address of the object, no copying necessary (not even a pointer).
 
-So when do you use a pointer, or reference? I like how Klaim from StackOverflow puts it:
+So when do you use a pointer, or reference? I like how [Klaim](http://stackoverflow.com/a/7058373) from StackOverflow (great site) puts it:
 
 > Use reference wherever you can, pointers wherever you must.
-Avoid pointers until you can't.
+
+>Avoid pointers until you can't.
 The reason is that pointers make things harder to follow/read, less safe and far more dangerous manipulations than any other constructs.
 So the rule of thumb is to use pointers only if there is no other choice.
