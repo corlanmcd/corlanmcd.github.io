@@ -72,8 +72,8 @@ int main()
 >In C/C++, pointers (e.g. int *x) are variable types that stores the address of non-pointer variables of the same type - they point to the location in memory of that non-pointer variable.
 
 <figure>
-	<a href="http://imgs.xkcd.com/comics/pointers.png"><img src="http://imgs.xkcd.com/comics/pointers.png"></a>
-	<figcaption><a href="http://imgs.xkcd.com/comics/pointers.png" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
+	<a href="http://ericleschinski.com/videos/this_is_sparta_300.png"><img src="http://ericleschinski.com/videos/this_is_sparta_300.png"></a>
+	<figcaption><a href="http://ericleschinski.com/videos/this_is_sparta_300.png" title=“King Leonidas, oh great one, what are pointers?“>King Leonidas, oh great one, what are pointers?</a>.</figcaption>
 </figure>
 
 So why would we want a variable that only stores memory addresses? Performance. Pointers allow you to refer to the same space in memory from multiple locations.This means you can modify the value stored in that memory space (where the non-pointer variable existed) and have that change visible in other parts of your program. This is helpful when playing with large objects. In our previous code example, we copied *by value* an integer - 4 bytes of data. What if we wanted to pass a `struct` that contained 500 integers? That’s *4 x 5 = 2000* bytes of data that’s copied! Instead of copying the 2000 bytes, we can pass a pointer, typically 4 bytes with most compilers. To show you how you’d go about using a pointer, let’s modify the original code example.
