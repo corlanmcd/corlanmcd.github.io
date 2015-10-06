@@ -66,5 +66,6 @@ So why would we want a variable that only stores memory addresses? Performance. 
 
 So, instead of having to copy a variable we want to pass as a parameter, as we do when we *pass-by-value*, we can tell the function directly where to look via a pointer.
 
-{: .notice} With most compilers, a pointer is typically 4 bytes.
+With most compilers, a pointer is typically 4 bytes.
+{: .notice} 
 
