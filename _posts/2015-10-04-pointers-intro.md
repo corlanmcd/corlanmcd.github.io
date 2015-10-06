@@ -68,7 +68,7 @@ int main()
 }
 {% endhighlight %}
 
-<figure class="half">
+<figure>
     <a href="http://ericleschinski.com/videos/this_is_sparta_300.png"><img src="http://ericleschinski.com/videos/this_is_sparta_300.png"></a>
     <figcaption>”King Leonidas, oh great one, what are pointers?” “Hmmm….”</figcaption>
 </figure>
