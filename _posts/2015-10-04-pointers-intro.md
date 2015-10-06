@@ -68,8 +68,9 @@ int main()
 }
 {% endhighlight %}
 
-<figure>
-	<a href="http://ericleschinski.com/videos/this_is_sparta_300.png"><img src="http://ericleschinski.com/videos/this_is_sparta_300.png"></a><figcaption><a href="http://ericleschinski.com/videos/this_is_sparta_300.png" title=“King Leonidas, sire, what are pointers?”>”King Leonidas, sire, what are pointers?” “Hmmm….”</a>.</figcaption>
+<figure class="half">
+    <a href="http://ericleschinski.com/videos/this_is_sparta_300.png"><img src="http://ericleschinski.com/videos/this_is_sparta_300.png"></a>
+    <figcaption>”King Leonidas, oh great one, what are pointers?” “Hmmm….”</figcaption>
 </figure>
 
 #### What are Pointers?
