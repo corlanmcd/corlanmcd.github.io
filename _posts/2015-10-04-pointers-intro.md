@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pointers & References: An Intro
+title: Pointers & References
 modified:
 excerpt: “A super brief introduction.“
 tags: [pointers, what is a pointer, what is a reference, pointers and references in c, pointers and references in c++, pointers as function parameters, pointers and arrays, tutorial on pointers, pointers in c, pointers in c++, c, c++, programming, programming languages]
@@ -44,9 +44,9 @@ int main()
 }
 {% endhighlight %}
 
-What do you think is the output of our small program above? If you said "2," you would be incorrect - it's still 1. "But we passed in val as a parameter to add_one!," you may say, and you're absolutely correct. The problem is, is that `add_one` recieved a **copy** of `val` - `val` was *passed-by-value*.
+What do you think is the output of our small program above? If you said "2," you would be incorrect - it's still 1. "But we passed in val as a parameter to add_one!," you may say, and you're absolutely correct. The problem is, is that `add_one` received a **copy** of `val` - `val` was *passed-by-value*.
 
-When a variable is *passed-by-value* to a function, this what happens: the value of `val` is copied to a temporary location, and this location is passed to `add_one` in the form of `num`. Since `add_one` recieved a copy of `val`, it cannot change `val` in any way.
+When a variable is *passed-by-value* to a function, this what happens: the value of `val` is copied to a temporary location, and this location is passed to `add_one` in the form of `num`. Since `add_one` received a copy of `val`, it cannot change `val` in any way.
 
 Instead, without pointers and references, you’d have to write the following:
 
