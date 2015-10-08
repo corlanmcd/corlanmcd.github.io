@@ -128,7 +128,7 @@ void main()
 }
 {% endhighlight %}
 
-[Feel like this?](http://i.kinja-img.com/gawker-media/image/upload/s--rpTuqXKR--/1460683416091749291.jpg). I know. For the most part, pointers and references are very similar in C++ (most C++ compilers implement references as pointers[^1]), but have the following differences:
+[Feel like this?](http://i.kinja-img.com/gawker-media/image/upload/s--rpTuqXKR--/1460683416091749291.jpg) I know! For the most part, pointers and references are very similar in C++ (most C++ compilers implement references as pointers[^1]), but have the following differences:
 
 * References can’t be reassigned, pointers can (infinitely).
 * References are not allowed to be set to NULL, pointers can.
