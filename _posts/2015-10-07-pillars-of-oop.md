@@ -61,9 +61,7 @@ public:
 };
 
 int main() {
-    std::vector<Animal*> v;
-    v.push_back(new Animal());
-    v.push_back(new Dog());
+    std::vector<Animal*> v { new Animal(), new Dog() };
 
     for (auto a : v)
     {
