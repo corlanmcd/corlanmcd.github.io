@@ -13,7 +13,7 @@ image:
 
 #### It's all about... PIE!
 
-![Image of pie](http://www.homemade-preschool.com/image-files/cpae-ap5.png)
+![Image of pie](http://www.epicurious.com/images/articlesguides/seasonalcooking/winter/key-lime-pie.jpg)
 {: .image-pull-right}
 
 Don't look at me that way, I'm not crazy. Pie really does have everything to do with OOP, object-oriented programming. 
@@ -24,11 +24,10 @@ Let's go over 'em one-by-one.
 
 #### Polymorphism
 
-<figure>
-<a href="http://www.mrlamont.com/uploads/1/7/0/2/17021682/833771300.gif"><img src="http://www.mrlamont.com/uploads/1/7/0/2/17021682/833771300.gif"></a>
-</figure>
+![Image of pie](http://www.mrlamont.com/uploads/1/7/0/2/17021682/833771300.gif)
+{: .image-pull-right}
 
-Polymorphism is greek for "many forms."
+You’ve probably been bashed over the head enough times (assuming your a CS student or software dev) to know that polymorphism is greek for "many forms."
 <!---->
 <!--{% highlight cpp %}-->
 <!--void add_one(int num)-->
