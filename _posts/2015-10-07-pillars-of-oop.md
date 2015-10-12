@@ -18,7 +18,7 @@ image:
     <figcaption>”Delicious PIE has everything to do with Object-Oriented Programming.”</figcaption>
 </figure>
 
-Don't look at me that way, I'm not crazy. Pie really does have everything to do with OOP, object-oriented programming. 
+Don't look at me that way, I'm not crazy. Pie really does have everything to do with OOP or **O**bject-**O**riented **P**rogramming. 
 
 It's the conceptual base that makes C++ (and Java, Python, Ruby, Simula, etc) what they are, OOP languages. So if you're like me, you learned what the three (or four, depending on who you talk to; but if I added the forth, I couldn't run with this whole pie joke...) pillars of OOP are: polymorphism, inheritance, and encapsulation.
 
@@ -73,7 +73,7 @@ int main() {
 }
 {% endhighlight %}
 
-**Note!** If you did not use a vector of `Animal` pointers but used a vector of `Animal` objects (`std::vector<Animal>`), you’d experience a problem in the for-each loop - when `a` is `Dog`, `a` will print “Noise,” like it’s parent class. Why? When you add the `Dog` object to the vector (of `Animal` objects), it will only copy the `Animal` part of `Dog`, leaving all the unique `Dog` bits behind. 
+**Note!** If you did not use a vector of `Animal` pointers but used a vector of `Animal` objects (`std::vector<Animal>`), you’d experience a problem in the range-based for loop - when `a` is `Dog`, `a` will print “Noise,” like it’s parent class. Why? When you add the `Dog` object to the vector (of `Animal` objects), it will only copy the `Animal` part of `Dog`, leaving all the unique `Dog` bits behind. 
 {: .notice} 
 
 #### Inheritance
