@@ -11,7 +11,7 @@ image:
     creditlink: http://www.fmschmitt.com/travels/spain/cordoba_province/cordoba-mosque/FirstExpansion.html
 ---
 
-#### It's all about... PIE!
+#### It's all about delicious… PIE!
 
 <figure>
     <a href="http://www.epicurious.com/images/articlesguides/seasonalcooking/winter/key-lime-pie.jpg"><img src="http://www.epicurious.com/images/articlesguides/seasonalcooking/winter/key-lime-pie.jpg"></a>
@@ -36,8 +36,45 @@ You’ve probably been bashed over the head enough times (assuming your a CS stu
 
 Now, say you had an array of `Animal`s and you decided to add a `Duck` object, a `Dog` object, and a `Cat` object (you can do this because all three of type `Animal`). If you were to iterate through the array and make a call to each object’s `speak()` function, you’d get what you’d expect: “Meow,” “Woof,” “Quack.” It doesn’t matter if it’s a `Dog` or a `Duck`, it’s guaranteed that if the object is of type `Animal` it has a `speak()` function that is callable. That’s the power of polymorphism.
 
+Here’s a code example:
+
+{% highlight cpp %}
+#include <iostream>
+#include <vector>
+
+class Animal
+{
+public:
+    Animal(){}
+    ~Animal(){}
+
+    virtual void speak() { std::cout << "Noise"; };
+};
+
+class Dog : public Animal
+{
+public:
+    Dog(){}
+    ~Dog(){}
+
+    void speak() { std::cout << "Woof!"; }
+};
+
+int main() {
+    std::vector<Animal*> v;
+    v.push_back(new Animal());
+    v.push_back(new Dog());
+
+    for (auto a : v)
+    {
+        a->speak();
+	std::cout << endl;
+    }
+}
+{% endhighlight %}
+
 #### Inheritance
 
 So we mentioned inheritance above, and for a good reason. If `Dog`, `Cat`, or `Duck` couldn’t *inherit* from `Animal`, we would’t have been able to accomplish what we just did. 
 
-Inheritance comes in two flavors: single and multiple. An example of *single inheritance* is a class that inherits from a single base class - above, `Dog` only inherits from `Animal`. You can probably guess what *multiple inheritance* means - a class that inherits from multiple base classes. 
+Inheritance comes in two flavors: single and multiple. An example of *single inheritance* is a class that inherits from a single base class - above, `Dog` only inherits from `Animal`. You can probably guess what *multiple inheritance* means - a class that inherits from multiple base classes (e.g. `Child` inherits from `Father` and `Mother`).
