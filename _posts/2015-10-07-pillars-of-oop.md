@@ -11,17 +11,12 @@ image:
     creditlink: http://www.fmschmitt.com/travels/spain/cordoba_province/cordoba-mosque/FirstExpansion.html
 ---
 
-<figure>
-<a href="http://www.homemade-preschool.com/image-files/cpae-ap5.png"><img src="http://www.homemade-preschool.com/image-files/cpae-ap5.png"></a>
-<figcaption>”Delicious pie has everything to do with OOP.”</figcaption>
-</figure>
-
 #### It's all about... PIE!
-
-Don't look at me that way, I'm not crazy. Pie really does have everything to do with OOP, object-oriented programming. 
 
 ![Image of pie](http://www.homemade-preschool.com/image-files/cpae-ap5.png)
 {: .image-pull-right}
+
+Don't look at me that way, I'm not crazy. Pie really does have everything to do with OOP, object-oriented programming. 
 
 It's the conceptual base that makes C++ (and Java, Python, Ruby, Simula, etc) what they are, OOP languages. So if you're like me, you learned what the three (or four, depending on who you talk to; but if I added the forth, I couldn't run with this whole pie joke...) pillars of OOP are: polymorphism, inheritance, and encapsulation.
 
