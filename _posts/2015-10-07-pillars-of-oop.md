@@ -2,7 +2,7 @@
 layout: post
 title: The Pillars of OOP
 modified:
-excerpt: It's all about...
+excerpt: It's all about delicious…
 tags: [object oriented design, oop, what is a oop, what is are the three pillars of object oriented design, encapsulation, polymorpish, inheritance, oop in c++, PIE, three pillars of oop, tutorial on OOP, programming, programming languages]
 comments: true
 image:
@@ -13,8 +13,10 @@ image:
 
 #### It's all about... PIE!
 
-![Image of pie](http://www.epicurious.com/images/articlesguides/seasonalcooking/winter/key-lime-pie.jpg)
-{: .image-pull-right}
+<figure>
+    <a href="http://www.epicurious.com/images/articlesguides/seasonalcooking/winter/key-lime-pie.jpg"><img src="http://www.epicurious.com/images/articlesguides/seasonalcooking/winter/key-lime-pie.jpg"></a>
+    <figcaption>”Delicious PIE has everything to do with Object-Oriented Programming.”</figcaption>
+</figure>
 
 Don't look at me that way, I'm not crazy. Pie really does have everything to do with OOP, object-oriented programming. 
 
