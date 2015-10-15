@@ -22,7 +22,7 @@ Back for some more PIE? Good. This time, let's talk about...
 
 #### Inheritance
 
-So we mentioned inheritance in [part one](/pillars-of-oop-polymorphism/) of this series, and for a good reason. If `Dog`, `Cat`, or `Duck` couldn’t *inherit* from `Animal`, we would’t have been able to accomplish what we just did   - which was evoking `speak()` in three different flavors of `Animal`.
+So we mentioned inheritance in [part one]({% post_url 2015-10-07-pillars-of-oop-polymorphism %}) of this series, and for a good reason. If `Dog`, `Cat`, or `Duck` couldn’t *inherit* from `Animal`, we would’t have been able to accomplish what we just did   - which was evoking `speak()` in three different flavors of `Animal`.
 
 ![Image of inheritance](http://www.derekyu.com/tigs/forums/tutorials/gmtut/gmtut-008.png)
 {: .image-pull-right}
