@@ -74,4 +74,4 @@ int main() {
 **Note!** If you did not use a vector of `Animal` pointers but used a vector of `Animal` objects (`std::vector<Animal>`), you’d experience a problem in the range-based for loop - when `a` is `Dog`, `a` will print “Noise,” like it’s parent class. Why? When you add the `Dog` object to the vector (of `Animal` objects), it will only copy the `Animal` part of `Dog`, leaving all the unique `Dog` bits behind. 
 {: .notice} 
 
-Next, inheritance! (Coming Soon)
+Next, [inheritance!]({% post_url 2015-10-14-pillars-of-oop-inheritance %})
