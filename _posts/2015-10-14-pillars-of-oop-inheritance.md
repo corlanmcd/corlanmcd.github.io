@@ -2,7 +2,7 @@
 layout: post
 title: The Pillars of OOP
 modified:
-excerpt: Part I: Polymorphism
+excerpt: Part II - Inheritance
 tags: [object oriented design, oop, what is a oop, what is are the three pillars of object oriented design, encapsulation, polymorpish, inheritance, oop in c++, PIE, three pillars of oop, tutorial on OOP, programming, programming languages]
 comments: true
 image:
