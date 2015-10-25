@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Inheritance
+title: Encapsulation
 modified:
-excerpt: The Second Pillar of OOP
+excerpt: The Third Pillar of OOP
 tags: [object oriented design, oop, what is a oop, what is are the three pillars of object oriented design, encapsulation, polymorpish, inheritance, oop in c++, PIE, three pillars of oop, tutorial on OOP, programming, programming languages]
 comments: true
 image:
