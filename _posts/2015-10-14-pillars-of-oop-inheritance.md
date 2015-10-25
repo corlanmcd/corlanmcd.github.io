@@ -12,13 +12,11 @@ image:
 ---
 
 <figure>
-    <a href="http://www.epicurious.com/images/articlesguides/seasonalcooking/winter/key-lime-pie.jpg"><img src="http://www.epicurious.com/images/articlesguides/seasonalcooking/winter/key-lime-pie.jpg"></a>
-    <figcaption>”Delicious PIE has everything to do with Object-Oriented Programming.”</figcaption>
+    <a href="http://41.media.tumblr.com/21fdc28dc2d90831f047d4082f2b6bc5/tumblr_nlahea0e4O1uqp3cso1_1280.jpg"><img src="http://41.media.tumblr.com/21fdc28dc2d90831f047d4082f2b6bc5/tumblr_nlahea0e4O1uqp3cso1_1280.jpg"></a>
+    <figcaption>"Luke, I am your father."</figcaption>
 </figure>
 
-Back for some more PIE? Good. This time, let's talk about...
-
-#### Inheritance - “Luke, I am your father.”
+#### Inheritance or: The I in PIE!
 
 So we mentioned inheritance in [part one]({% post_url 2015-10-07-pillars-of-oop-polymorphism %}) of this series, and for a good reason. If `Dog` couldn’t *inherit* from `Animal`, we would’t have been able to accomplish what we just did   - which was storing `Dog` in an array of `Animal`s.
 
