@@ -11,8 +11,6 @@ image:
     creditlink: http://www.fmschmitt.com/travels/spain/cordoba_province/cordoba-mosque/FirstExpansion.html
 ---
 
-#### It's all about delicious… PIE!
-
 <figure>
     <a href="http://www.epicurious.com/images/articlesguides/seasonalcooking/winter/key-lime-pie.jpg"><img src="http://www.epicurious.com/images/articlesguides/seasonalcooking/winter/key-lime-pie.jpg"></a>
     <figcaption>”Delicious PIE has everything to do with Object-Oriented Programming.”</figcaption>
@@ -28,7 +26,7 @@ So what does inheritance do for us? Well, it allows us to create classes (called
 
 <figure>
     <a href="http://www.derekyu.com/tigs/forums/tutorials/gmtut/gmtut-008.png"><img src="http://www.derekyu.com/tigs/forums/tutorials/gmtut/gmtut-008.png"></a>
-    <figcaption>”The tree of life.”</figcaption>
+    <figcaption>"The tree of life."</figcaption>
 </figure>
 
 This makes it easier for us to reuse code (because good programmers are lazy) and create software that is flexible and easily maintainable. For example, take a gander to the image on the right. Imagine that we’re creating a game involving walking humans, dogs, and cats. We did our market research and found that walking animals aren’t what the hip, cool kids are looking for nowadays - they want [flying animals](http://i.ytimg.com/vi/QH2-TGUlwu4/hqdefault.jpg). Well, there’s two ways of doing this: 1) adding flight capability to each class (`oHuman`, `oDog`, and `oCat`), or 2) adding `flight = true` to our parent class (`oAnimal`), have the change trickle down to it’s child (and grandchildren) classes, and be on our merry way. What would you chose? 1 or 2?
@@ -78,5 +76,7 @@ int main() {
     c.burb();
 }
 {% endhighlight %}
+
+Onward to encapsulation!
 
  
