@@ -20,8 +20,13 @@ Previously, I talked about inheritance in [part one]({% post_url 2015-10-07-pill
 
 #### Encapsulation or: You don't need to know that!
 
-So what is encapsulation? Encapsulation is the concept in which we shackle data with functions that modify said data in a structure such as a class. When you encapsulate something, you're hiding some part of your class (be it functions or variables) as to prevent misuage from the **outside** (outside of your class).
+So what is encapsulation? Here's an example: your smartphone. You own one, right? You know how to use it, download apps, play funny vines, check Facebook, and once in a while, maybe, make a phone call. Do you how to program the kernal? Probably not. You only know what you need to operate the phone, but not any of that technical nonsense! So, encapsulation is a form of *information hiding*, just like how the manufacturer of your smartphone is *hiding* all the technical wizardry that makes your smartphone work. The technical definition of encapsulation is:
 
+> The means of shackling together the data and functions that modify the data, and keeping both from interference and misuse from the outside. This is usually obtained using a class structure.
+
+When it comes to programming, sometimes, you want to hide the details of some class you are writing, say 'Porsche 911'. You're proud of this class you've just written, and you don't want anyone to just change the implementation details! Someone might change the 'horsepower' from 560 to 9001!, and the next person to 'drive()' the car might get into an accident - and we don't want that. Encapsulation allows us to prevent this from ever happening.
+
+So, the technical definition for encapsulation is 
 <figure>
     <a href="http://www.derekyu.com/tigs/forums/tutorials/gmtut/gmtut-008.png"><img src="http://www.derekyu.com/tigs/forums/tutorials/gmtut/gmtut-008.png"></a>
     <figcaption>"The tree of life."</figcaption>
