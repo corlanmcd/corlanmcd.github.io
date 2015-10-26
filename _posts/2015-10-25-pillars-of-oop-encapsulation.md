@@ -2,13 +2,13 @@
 layout: post
 title: Encapsulation
 modified:
-excerpt: The Third Pillar of OOP
+excerpt: The Third Pillar of OOP or: Hands off!
 tags: [object oriented design, oop, what is a oop, what is are the three pillars of object oriented design, encapsulation, polymorpish, inheritance, oop in c++, PIE, three pillars of oop, tutorial on OOP, programming, programming languages]
 comments: true
 image:
-    feature: pillars_of_oop.png
-    credit: F.M. Schmitt
-    creditlink: http://www.fmschmitt.com/travels/spain/cordoba_province/cordoba-mosque/FirstExpansion.html
+    feature: encapsulation.png
+    credit: Ocean's Eleven
+    creditlink: http://www.imdb.com/title/tt0240772/
 ---
 
 <figure>
@@ -22,64 +22,45 @@ Previously, I talked about inheritance in [part one]({% post_url 2015-10-07-pill
 
 So what is encapsulation? Here's an example: your smartphone. You own one, right? You know how to use it, download apps, play funny vines, check Facebook, and once in a while, maybe, make a phone call. Do you how to program the kernal? Probably not. You only know what you need to operate the phone, but not any of that technical nonsense! So, encapsulation is a form of *information hiding*, just like how the manufacturer of your smartphone is *hiding* all the technical wizardry that makes your smartphone work. The technical definition of encapsulation is:
 
-> The means of shackling together the data and functions that modify the data, and keeping both from interference and misuse from the outside. This is usually obtained using a class structure.
+> The hiding of implementation details to users through the means of shackling data and functions that modify the data, thus keeping both from interference and misuse from the outside. This is usually obtained using a class structure.
 
-When it comes to programming, sometimes, you want to hide the details of some class you are writing, say 'Porsche 911'. You're proud of this class you've just written, and you don't want anyone to just change the implementation details! Someone might change the 'horsepower' from 560 to 9001!, and the next person to 'drive()' the car might get into an accident - and we don't want that. Encapsulation allows us to prevent this from ever happening.
-
-So, the technical definition for encapsulation is 
-<figure>
-    <a href="http://www.derekyu.com/tigs/forums/tutorials/gmtut/gmtut-008.png"><img src="http://www.derekyu.com/tigs/forums/tutorials/gmtut/gmtut-008.png"></a>
-    <figcaption>"The tree of life."</figcaption>
-</figure>
-
-This makes it easier for us to reuse code (because good programmers are lazy) and create software that is flexible and easily maintainable. For example, take a gander to the image on the right. Imagine that we’re creating a game involving walking humans, dogs, and cats. We did our market research and found that walking animals aren’t what the hip, cool kids are looking for nowadays - they want [flying animals](http://i.ytimg.com/vi/QH2-TGUlwu4/hqdefault.jpg). Well, there’s two ways of doing this: 1) adding flight capability to each class (`oHuman`, `oDog`, and `oCat`), or 2) adding `flight = true` to our parent class (`oAnimal`), have the change trickle down to it’s child (and grandchildren) classes, and be on our merry way. What would you chose? 1 or 2?
-
-So you chose #2, [you must be a software developer.](https://bintrayblog.files.wordpress.com/2013/10/lazyness.jpg) Inheritance comes in two flavors: single and multiple. An example of *single inheritance* is a class that inherits from a single base class - above, `oDog` only inherits from `oPet`. You can probably guess what *multiple inheritance* means - a class that inherits from 2 or more base classes (e.g. `Child` inherits from `Father` and `Mother`).
-
-Here’s a code example of multiple inheritance:
+When it comes to programming, sometimes you want to hide the details of some class you are writing, say 'Porsche 911'. You're proud of this class you've just written, and you don't want anyone to just change the implementation details! Someone might change the 'horsepower' from 560 to 9001!, and the next person to 'drive()' the car might get into an accident - and we don't want that. Encapsulation could help us prevent this mishap:
 
 {% highlight cpp %}
 #include <iostream>
 
-class Father
+class Porsche911
 {
 public:
-    Father(bool burb){ can_burb = burb; }
-    ~Father(){}
+Porsche911() { car_color = "Black"; }"
+Porsche911(std::string color) { car_color = color; }
+~Porsche911() {}
 
-    virtual void burb() { if (can_burb) std::cout << "BUUUURB!"; };
+void drive() { std::cout << "VROOOOOM!"; };
+void print_color() { std::cout << "Car color: " << car_color; }
+void print_horsepower() { std::cout << "Horsepower: " << horsepower; }
 
-    bool can_burb;
-};
+private:
+static const unsigned int MAX_SPEED  = 194;
+static const unsigned int HORSEPOWER = 560;
+static const unsigned int NUM_WHEELS = 4;
+static const unsigned int NUM_DOORS  = 4;
 
-class Mother
-{
-public:
-    Mother(bool fly){ can_fly = fly; }
-    ~Mother(){}
-
-    virtual void fly() { if (can_fly) std::cout << "FLYING!"; };
-
-    bool can_fly;
-};
-
-class Child : public Father,
-	      public Mother
-{
-public:
-    Child(bool burb, bool fly)
-        : Father(burb),
-          Mother(fly){}
-    ~Child(){}
+std::string car_color;
 };
 
 int main() {
-    Child c(false, true);
-    c.fly();
-    c.burb();
+    Porshe911 my_porsche("Blue");
+    my_porsche.drive();
 }
 {% endhighlight %}
 
-Onward to encapsulation!
+In the example above, there are a few encapsulated bits: 'MAX_SPEED', 'HORSEPOWER', 'NUM_WHEELS', 'NUM_DOORS', and 'car_color'. No matter how hard a user of the 'Porsche911' class tried, he wouldn't be able to because the previously mentioned variables (the one's in CAPS being constant variables) were declared as **private** variables - they cannot be accessed or modified outside of the class. So no matter how many 'Porsche911's someone created, each and everyone of them with have the same horsepower, max speed, and number of wheels and doors. If we wanted to allow the user to change some of these attributes (like set the horsepower to 9001), we could add a few *setter* methods that set these attributes, but let's refrain from that - we don't want any car accidents.
+
+A rule of thumb: encapuslate data you don't want the world to see or is unnecessary for the user of the class to know.
+{: .notice}
+
+
+Well, that was the last piece of the PIE! *ba dum tss* Delicious, wasn't it? Hopefully, I've done a decent job at introducing the three pillars of object-oriented programming: polymorphism, inheritance, and encapsulation. 'Til next time!'
 
  
